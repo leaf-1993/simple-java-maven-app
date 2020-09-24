@@ -10,5 +10,13 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
+        stage('Install') {
+            steps {
+                sh 'pwd'
+                sh 'cd sunway-cloud-user'
+                sh 'pwd'
+                sh 'mvn -B -DskipTests clean package'
+            }
+        }
     }
 }
