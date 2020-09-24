@@ -7,10 +7,10 @@ pipeline {
         stage('Build') {
             steps {
                 sh{
-                    pwd
-                    cd target
-                    ls -l
-                    pwd
+                    'pwd'
+                    'cd target'
+                    'ls -l'
+                    'pwd'
                 }
             }
         }
